@@ -17,7 +17,7 @@ from sklearn.compose import ColumnTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.impute import SimpleImputer
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import OrdinalEncoder, FunctionTransformer
+from sklearn.preprocessing import OrdinalEncoder, FunctionTransformer, OneHotEncoder
 
 import wandb
 from sklearn.ensemble import RandomForestRegressor
@@ -54,7 +54,6 @@ def go(args):
     # Use run.use_artifact(...).file() to get the train and validation artifact
     # and save the returned path in train_local_pat
     trainval_local_path = run.use_artifact(args.trainval_artifact).file()
-   
     X = pd.read_csv(trainval_local_path)
     y = X.pop("price")  # this removes the column "price" from X and puts it into y
 
@@ -95,10 +94,11 @@ def go(args):
     ######################################
     # Save the sk_pipe pipeline as a mlflow.sklearn model in the directory "random_forest_dir"
     # HINT: use mlflow.sklearn.save_model
-    signature = mlflow.models.infer_signature(X_val, y_pred)
+    #signature = mlflow.models.infer_signature(X_val, y_pred)
     mlflow.sklearn.save_model(
 	sk_pipe,
-        signature = signature,
+        path="random_forest_dir",
+        #signature = signature,
         input_example = X_train.iloc[:5]
     )
     ######################################

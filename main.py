@@ -97,7 +97,7 @@ def go(config: DictConfig):
 
             # NOTE: use the rf_config we just created as the rf_config parameter for the train_random_forest
             _ = mlflow.run(
-		f"{config['main']['components_repository']}/train_random_forest",
+		 os.path.join(hydra.utils.get_original_cwd(), "src", "basic_cleaning"),
 		"main",
 		parameters={
 			"trainval_artifact": "trainval_data.csv:latest",
