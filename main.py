@@ -107,7 +107,7 @@ def go(config: DictConfig):
             		"random_seed": config['modeling']['random_seed'],
             		"stratify_by": config['modeling']['stratify_by'],
             		"output_artifact": "random_forest_export"
-		}
+		},
 	     )
 
         if "test_regression_model" in active_steps:
