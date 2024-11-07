@@ -9,6 +9,7 @@ In this project you will build such a pipeline.
 - GitHub Repository: [Project-Build-an-ML-Pipeline-Starter6](https://github.com/yujinine/Project-Build-an-ML-Pipeline-Starter6.git)
 - Weights & Biases Project: [NYC Airbnb Project](https://wandb.ai/yujinine-western-governors-university/nyc_airbnb?nw=nwuseryujinine)
 
+https://wandb.ai/yujinine-western-governors-university/nyc_airbnb
 
 ## Table of contents
 
