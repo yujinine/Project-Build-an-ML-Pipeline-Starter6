@@ -7,7 +7,7 @@ to be retrained with the same cadence, necessitating an end-to-end pipeline that
 In this project you will build such a pipeline.
 **Project Links:**
 - GitHub Repository: [Project-Build-an-ML-Pipeline-Starter6](https://github.com/yujinine/Project-Build-an-ML-Pipeline-Starter6.git)
-- Weights & Biases Project: [NYC Airbnb Project](https://wandb.ai/yujinine-western-governors-university/nyc_airbnb?nw=nwuseryujinine)
+- Weights & Biases Project: [NYC Airbnb Project](https://wandb.ai/yujinine-western-governors-university/nyc_airbnb)
 
 https://wandb.ai/yujinine-western-governors-university/nyc_airbnb
 
@@ -56,7 +56,7 @@ then paste your key into this command:
 ```bash
 > wandb login [your API key]
 ```
-- Weights & Biases Project: [NYC Airbnb Project](https://wandb.ai/yujinine-western-governors-university/nyc_airbnb?nw=nwuseryujinine)
+- Weights & Biases Project: [NYC Airbnb Project] https://wandb.ai/yujinine-western-governors-university/nyc_airbnb
 
 You should see a message similar to:
 ```
